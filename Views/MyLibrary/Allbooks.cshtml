@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <title>Dropbox03</title>
+</head>
+<body>
+        <p>
+            <a asp-controller="MyLibrary" asp-action="AddBook">
+                Enter a book title
+            </a>
+        </p>
+        <h3>All Books in My Library</h3>
+            <ol>
+                @{ 
+                    foreach (string book in ViewData["Books"] as List<string>)
+                    {
+                        <li>@book</li>
+                    }
+                 }
+            </ol>
+</body>
+</html>

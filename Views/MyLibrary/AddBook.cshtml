@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Enter a New Book</title>
+</head>
+<body>
+    <form asp-controller="MyLibrary" asp-action="AddBook" method="post">
+    Enter a book title:
+        <input type="text" name="bookTitle"/>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
