@@ -12,9 +12,9 @@ namespace Dropbox03.Controllers
         // GET: /<controller>/
         static List<string> allBooks = new List<string> { "Java Basic", "Agile with C#", "Advanced Agile" };
         
-        public IActionResult AllBooks()
+        public IActionResult Book()
         {
-        ViewData["My Books"] = allBooks;
+        ViewData["Books"] = allBooks;
         return View();
         }
         public IActionResult AddBook()
